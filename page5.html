@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayfinder · Final Chapter</title>
+<meta name="description" content="One last chance. Yes or no?">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+<div class="sky"></div>
+<div class="stars" aria-hidden="true"></div>
+<div class="petals" aria-hidden="true"></div>
+
+<nav class="wayfinder-nav" aria-label="Chapters">
+  <a href="index.html" class="wf-link done reachable" aria-label="Chapter 1: I know you're angry"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></a>
+  <span class="wf-line done"></span>
+  <a href="page2.html" class="wf-link done reachable" aria-label="Chapter 2: What I actually did"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></a>
+  <span class="wf-line done"></span>
+  <a href="page3.html" class="wf-link done reachable" aria-label="Chapter 3: Us vs. the problem"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></a>
+  <span class="wf-line done"></span>
+  <a href="page4.html" class="wf-link done reachable" aria-label="Chapter 4: Putting it back"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></a>
+  <span class="wf-line done"></span>
+  <a href="page5.html" class="wf-link current reachable" aria-label="Chapter 5: One last chance" aria-current="page"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></a>
+</nav>
+
+<main class="stage">
+  <p class="eyebrow">A voyage back to you &middot; Final chapter</p>
+  <h1 class="headline" data-reveal>One last chance.</h1>
+  <p class="lede">Not to erase what happened &mdash; just to talk. Really talk, whenever and however you want: in person, on the phone, whenever you're ready. No teasing this time. I promise.</p>
+
+  <div id="choiceZone" class="choice-zone">
+    <button class="btn btn-primary" id="yesBtn" type="button">Yes, let's talk <span class="btn-arrow" aria-hidden="true">&rarr;</span></button>
+    <button class="btn btn-ghost" id="noBtn" type="button">No</button>
+  </div>
+
+  <div class="finale-wrap" id="finaleWrap">
+    <div class="heart-stage bloom" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse class="island-ring" cx="100" cy="100" rx="86" ry="80" fill="rgba(79,174,125,.18)" stroke="var(--tefiti)" stroke-width="3"/>
+        <g class="heart-glow">
+          <path class="spiral-stroke" d="M110,100 C110,94 104,90 98,90 C90,90 84,97 84,106 C84,118 95,128 110,132 C126,128 138,116 138,101 C138,83 122,70 102,70 C79,70 62,88 62,111 C62,138 84,158 111,158" fill="none" stroke="var(--tefiti-light)" stroke-width="4.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </div>
+    <p class="quote-block">Thank you. I'm not going anywhere. Text me whenever you're ready &mdash; I'll pick up on the first ring.</p>
+  </div>
+
+  <p class="page-foot">island 5 of 5 &mdash; end of the map, not of us</p>
+</main>
+
+<div class="ocean" aria-hidden="true">
+  <svg class="wave1" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w5a" d="M0,90 C180,150 360,30 540,90 C720,150 900,30 1080,90 C1260,150 1350,70 1440,90 L1440,220 L0,220 Z"/></defs>
+    <use href="#w5a"/><use href="#w5a" x="1440"/>
+  </svg>
+  <svg class="wave2" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w5b" d="M0,110 C200,60 400,150 600,100 C800,50 1000,140 1200,90 C1320,65 1400,100 1440,110 L1440,220 L0,220 Z"/></defs>
+    <use href="#w5b"/><use href="#w5b" x="1440"/>
+  </svg>
+  <svg class="wave3" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w5c" d="M0,130 C220,180 380,90 600,140 C820,190 1000,110 1220,150 C1330,170 1400,140 1440,150 L1440,220 L0,220 Z"/></defs>
+    <use href="#w5c"/><use href="#w5c" x="1440"/>
+  </svg>
+</div>
+<div class="burst" aria-hidden="true"></div>
+<script src="assets/script.js"></script>
+<script>
+  const yesBtn = document.getElementById('yesBtn');
+  const noBtn = document.getElementById('noBtn');
+  const choiceZone = document.getElementById('choiceZone');
+  const finaleWrap = document.getElementById('finaleWrap');
+
+  initEvasiveButton(noBtn);
+
+  yesBtn.addEventListener('click', ()=>{
+    choiceZone.style.display = 'none';
+    finaleWrap.classList.add('show');
+    burstCelebration(50);
+    finaleWrap.scrollIntoView({ behavior:'smooth', block:'center' });
+  });
+</script>
+</body>
+</html>

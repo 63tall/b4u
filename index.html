@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For You 🌊</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for that tropical/Moana feel -->
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wayfinder · Chapter 1</title>
+<meta name="description" content="I know you're angry. Read when you're ready.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 
-    <!-- Animated Ocean Waves Background -->
-    <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
+<div class="sky"></div>
+<div class="stars" aria-hidden="true"></div>
+<div class="petals" aria-hidden="true"></div>
 
-    <!-- PAGE 1 -->
-    <div id="page1" class="page active">
-        <div class="content-box">
-            <h1>I know you're angry... ⛈️</h1>
-            <p>The ocean is acting up today, and I know I'm the one who caused the storm.</p>
-            <button onclick="nextPage('page1', 'page2')">See beyond the reef ⛵</button>
-        </div>
-    </div>
+<nav class="wayfinder-nav" aria-label="Chapters">
+  <a href="index.html" class="wf-link current reachable" aria-label="Chapter 1: I know you're angry" aria-current="page">
+    <svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg>
+  </a>
+  <span class="wf-line"></span>
+  <span class="wf-link"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></span>
+  <span class="wf-line"></span>
+  <span class="wf-link"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></span>
+  <span class="wf-line"></span>
+  <span class="wf-link"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></span>
+  <span class="wf-line"></span>
+  <span class="wf-link"><svg viewBox="0 0 24 24"><path class="wf-star-path" d="M12 2 L14.7 9.1 L22 9.1 L16.1 13.7 L18.4 21 L12 16.6 L5.6 21 L7.9 13.7 L2 9.1 L9.3 9.1 Z"/></svg></span>
+</nav>
 
-    <!-- PAGE 2 -->
-    <div id="page2" class="page">
-        <div class="content-box">
-            <h1>I'm so sorry. 🌺</h1>
-            <p>I shouldn't have teased you while you were at work about my trip to see my friend. It was incredibly stupid and insensitive of me.</p>
-            <p>Sometimes I can be as clueless as Heihei 🐓, but I never want to make you feel insecure or upset.</p>
-            <button onclick="nextPage('page2', 'page3')">Keep sailing 🌊</button>
-        </div>
-    </div>
+<main class="stage">
+  <div class="spiral-mark" aria-hidden="true">
+    <svg viewBox="-10 -10 220 220" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="98" fill="none" stroke="rgba(251,243,228,.22)" stroke-width="1" stroke-dasharray="2 7"/>
+      <path d="M102.0,100.0 L102.2,100.3 L102.4,100.6 L102.5,100.9 L102.5,101.3 L102.6,101.7 L102.5,102.1 L102.4,102.5 L102.2,103.0 L102.0,103.4 L101.6,103.8 L101.2,104.2 L100.8,104.5 L100.3,104.8 L99.7,105.0 L99.1,105.1 L98.4,105.2 L97.7,105.2 L97.0,105.0 L96.4,104.8 L95.7,104.5 L95.0,104.1 L94.4,103.6 L93.8,103.1 L93.3,102.4 L92.8,101.6 L92.5,100.8 L92.2,99.9 L92.1,99.0 L92.0,98.0 L92.1,97.0 L92.3,96.1 L92.7,95.1 L93.1,94.1 L93.7,93.2 L94.4,92.3 L95.3,91.6 L96.2,90.9 L97.2,90.3 L98.3,89.8 L99.5,89.5 L100.8,89.3 L102.1,89.2 L103.4,89.3 L104.7,89.6 L106.0,90.0 L107.2,90.6 L108.4,91.4 L109.5,92.3 L110.5,93.3 L111.4,94.5 L112.2,95.8 L112.8,97.2 L113.3,98.7 L113.5,100.2 L113.6,101.8 L113.5,103.5 L113.2,105.1 L112.7,106.7 L112.0,108.3 L111.2,109.7 L110.1,111.1 L108.8,112.4 L107.4,113.5 L105.9,114.5 L104.2,115.3 L102.4,115.9 L100.6,116.3 L98.7,116.5 L96.7,116.4 L94.8,116.1 L92.8,115.6 L91.0,114.8 L89.2,113.9 L87.5,112.6 L85.9,111.2 L84.5,109.6 L83.3,107.9 L82.3,105.9 L81.5,103.9 L81.0,101.7 L80.7,99.5 L80.7,97.2 L80.9,94.9 L81.5,92.7 L82.3,90.4 L83.3,88.3 L84.6,86.3 L86.2,84.5 L88.0,82.8 L89.9,81.3 L92.1,80.1 L94.4,79.1 L96.9,78.4 L99.4,77.9 L102.0,77.8 L104.6,78.0 L107.2,78.5 L109.8,79.3 L112.2,80.3 L114.6,81.7 L116.7,83.4 L118.7,85.3 L120.5,87.5 L122.0,89.9 L123.2,92.5 L124.2,95.2 L124.8,98.0 L125.0,100.9 L125.0,103.8 L124.6,106.8 L123.8,109.7 L122.7,112.5 L121.3,115.2 L119.5,117.7 L117.5,120.0 L115.1,122.1 L112.6,123.9 L109.8,125.4 L106.8,126.6 L103.7,127.4 L100.5,127.8 L97.2,127.9 L94.0,127.6 L90.7,126.9 L87.5,125.9 L84.5,124.4 L81.6,122.6 L79.0,120.5 L76.6,118.0 L74.4,115.3 L72.7,112.3 L71.2,109.1 L70.1,105.7 L69.5,102.2 L69.2,98.6 L69.4,95.0 L69.9,91.4 L70.9,87.9 L72.4,84.5 L74.2,81.2"
+        fill="none" stroke="var(--gold)" stroke-width="2.6" stroke-linecap="round"/>
+      <g transform="translate(100,100)">
+        <path d="M0,-7 L1.9,-2.1 L7,-2.1 L3,1.2 L4.4,6.5 L0,3.5 L-4.4,6.5 L-3,1.2 L-7,-2.1 L-1.9,-2.1 Z" fill="var(--foam)"/>
+      </g>
+      <g transform="translate(74,81) rotate(-25)">
+        <path d="M-15,4 Q0,-7 15,4 L11,4 Q0,10 -11,4 Z" fill="var(--coral)"/>
+        <line x1="0" y1="4" x2="0" y2="-15" stroke="var(--foam)" stroke-width="1.6"/>
+        <path d="M0,-15 L11,-4 L0,-2 Z" fill="var(--foam)" opacity=".85"/>
+      </g>
+    </svg>
+  </div>
 
-    <!-- PAGE 3 -->
-    <div id="page3" class="page">
-        <div class="content-box">
-            <h1>Our Wayfinding 🌠</h1>
-            <p class="special-text">"I never want us to be against each other. It's us vs the problem always. I value you, and I'd never knowingly do anything to risk what we have. Let's talk, fix this, and promise to never look away from each other."</p>
-            <button onclick="nextPage('page3', 'page4')">One more thing...</button>
-        </div>
-    </div>
+  <p class="eyebrow">A voyage back to you · Chapter 1 of 5</p>
+  <h1 class="headline" data-reveal>I know you're angry.</h1>
 
-    <!-- PAGE 4 -->
-    <div id="page4" class="page">
-        <div class="content-box">
-            <h1>Will you restore the heart? 💚</h1>
-            <p>One last chance.<br>Can you forgive me?</p>
-            <div class="button-container">
-                <button id="yesBtn" onclick="showSuccess()">Yes</button>
-                <button id="noBtn">No</button>
-            </div>
-        </div>
-    </div>
+  <p class="lede">And you should be. I said something careless about a trip to see a friend, and instead of hearing how it landed, I teased you about it. You went quiet. I understand why.</p>
+  <p class="lede">This isn't a text asking you to answer right now. It's five small islands. Open one whenever it feels right — even if that's not today. I'll be here at the end of them.</p>
 
-    <!-- SUCCESS MESSAGE -->
-    <div id="success" class="page">
-        <div class="content-box heart-glow">
-            <h1>Thank You! 🌀</h1>
-            <p>The heart has been restored! I promise to make it up to you.</p>
-            <p>Call me whenever you're ready to talk. ❤️</p>
-        </div>
-    </div>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="page2.html">Begin the journey <span class="btn-arrow" aria-hidden="true">→</span></a>
+  </div>
 
-    <script src="script.js"></script>
+  <p class="page-foot">island 1 of 5 — no reply needed yet</p>
+</main>
+
+<div class="ocean" aria-hidden="true">
+  <svg class="wave1" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w1a" d="M0,90 C180,150 360,30 540,90 C720,150 900,30 1080,90 C1260,150 1350,70 1440,90 L1440,220 L0,220 Z"/></defs>
+    <use href="#w1a"/><use href="#w1a" x="1440"/>
+  </svg>
+  <svg class="wave2" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w1b" d="M0,110 C200,60 400,150 600,100 C800,50 1000,140 1200,90 C1320,65 1400,100 1440,110 L1440,220 L0,220 Z"/></defs>
+    <use href="#w1b"/><use href="#w1b" x="1440"/>
+  </svg>
+  <svg class="wave3" viewBox="0 0 2880 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs><path id="w1c" d="M0,130 C220,180 380,90 600,140 C820,190 1000,110 1220,150 C1330,170 1400,140 1440,150 L1440,220 L0,220 Z"/></defs>
+    <use href="#w1c"/><use href="#w1c" x="1440"/>
+  </svg>
+</div>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
