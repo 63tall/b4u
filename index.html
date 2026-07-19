@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 🌊</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for that tropical/Moana feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Animated Ocean Waves Background -->
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+    <!-- PAGE 1 -->
+    <div id="page1" class="page active">
+        <div class="content-box">
+            <h1>I know you're angry... ⛈️</h1>
+            <p>The ocean is acting up today, and I know I'm the one who caused the storm.</p>
+            <button onclick="nextPage('page1', 'page2')">See beyond the reef ⛵</button>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div id="page2" class="page">
+        <div class="content-box">
+            <h1>I'm so sorry. 🌺</h1>
+            <p>I shouldn't have teased you while you were at work about my trip to see my friend. It was incredibly stupid and insensitive of me.</p>
+            <p>Sometimes I can be as clueless as Heihei 🐓, but I never want to make you feel insecure or upset.</p>
+            <button onclick="nextPage('page2', 'page3')">Keep sailing 🌊</button>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div id="page3" class="page">
+        <div class="content-box">
+            <h1>Our Wayfinding 🌠</h1>
+            <p class="special-text">"I never want us to be against each other. It's us vs the problem always. I value you, and I'd never knowingly do anything to risk what we have. Let's talk, fix this, and promise to never look away from each other."</p>
+            <button onclick="nextPage('page3', 'page4')">One more thing...</button>
+        </div>
+    </div>
+
+    <!-- PAGE 4 -->
+    <div id="page4" class="page">
+        <div class="content-box">
+            <h1>Will you restore the heart? 💚</h1>
+            <p>One last chance.<br>Can you forgive me?</p>
+            <div class="button-container">
+                <button id="yesBtn" onclick="showSuccess()">Yes</button>
+                <button id="noBtn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MESSAGE -->
+    <div id="success" class="page">
+        <div class="content-box heart-glow">
+            <h1>Thank You! 🌀</h1>
+            <p>The heart has been restored! I promise to make it up to you.</p>
+            <p>Call me whenever you're ready to talk. ❤️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
